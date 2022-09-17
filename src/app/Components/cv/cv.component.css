@@ -1,0 +1,24 @@
+
+
+/* width */
+#cvScroll::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+#cvScroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+#cvScroll::-webkit-scrollbar-thumb {
+  background: rgb(0, 168, 180);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#cvScroll::-webkit-scrollbar-thumb:hover {
+  background: #352929;
+}
+

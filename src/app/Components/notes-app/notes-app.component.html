@@ -1,0 +1,55 @@
+<br>
+
+<div class="container" id="mainDiv" style="display:flex; ">
+    <div class="container" style="padding: 17px ;display: inline-block!important;width:43%; height:58vh">
+        <form #notesForm="ngForm" (submit)="onSendData(notesForm.value); notesForm.reset()">
+            <h3>Notes to take into consideration</h3>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter the Title</label>
+                <input ngModel type="text" class="form-control" name="title" id="exampleFormControlInput1"
+                    placeholder="Type">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Enter the Discription</label>
+                <textarea ngModel class="form-control" name="discription" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+
+            <input type="submit" value="Go" class="btn btn-success" style="margin-bottom: 3px ;">
+        </form>
+    </div>
+    <br><br>
+
+    <div *ngIf="dataArray.length >0" style="width:43%">
+        <div class="container" style="padding: 20px; display: inline-block!important; height:56vh; overflow-y:auto">
+            <div *ngFor="let data of dataArray">
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+
+                    <ngb-panel>
+                        <ng-template ngbPanelTitle>
+                            <span>&#9733; <b>{{data.title}}</b> &#9733;</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            {{data.discription}}
+                    </ng-template>
+                    </ngb-panel>
+
+                </ngb-accordion>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    @media screen and (max-width: 600px) {
+
+        #mainDiv {
+            display: block !important;
+        }
+
+        div {
+            width: 100% !important;
+        }
+    }
+</style>

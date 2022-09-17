@@ -1,0 +1,36 @@
+<div class="container" style="display:block;">
+  <div style="border: 1px solid rgba(0, 0, 0, 0.267); border-radius:11px; height: 49vh; padding: 10px;">
+    <div name="viewArea" id="viewArea" style="padding-right: 10px" #viewAreas (scroll)="fixscroll()">
+
+      <div style="font-size:13px ;height:auto;" *ngFor="let dataform of dataArray" class="receiverMsg">
+
+        <b> {{dataform.username}} </b>: &nbsp;<font color="#aaa">{{dataform.date | date:'shortTime'}}</font>
+        <p>{{dataform.msgbox}}</p>
+
+      </div>
+    </div>
+  </div>
+  <form #dataForm="ngForm" (submit)="sendDataForm(dataForm.value); msgbox.value = ''">
+    <div class="container" style="display:block; margin: 2px;width: 100%;" [hidden]="isDisplayed">
+
+      <textarea style="display: block; border-radius: 20px; resize: none!important; width: 60%; float: left;" ngModel
+        class="form-control bor" id="exampleFormControlTextarea1" rows="1" name="msgbox" #msgbox></textarea>
+      <button type="submit" class="btn btn-info"
+        style="text-align: center!important;  font-family:Arial, Helvetica, sans-serif; display: inline-block;">Send</button>
+      <button style="display: inline-block; margin: 2px ;" (click)="showMe()" class="btn btn-outline-info">
+        <ion-icon name="chevron-back-circle-outline" style="font-size: 19px;"></ion-icon>
+      </button>
+
+    </div>
+    <div [hidden]="!isDisplayed">
+      <p style="margin-bottom:1px ;">Join Guest Talks</p>
+      <div>
+        <textarea class="form-control" style="margin: 2px; display:inline-block; width:78%" name="user" ngModel
+          placeholder="Enter your name" #user00></textarea>
+        <p style="display:inline-block; font-size: 20px; margin-top:-43px; height:60px " (click)="showMe()"
+          class="btn btn-outline-info">start</p>
+      </div>
+
+    </div>
+  </form>
+</div>

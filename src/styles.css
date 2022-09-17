@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@media only screen and (min-width: 800px) {
+  #bigDiv {
+
+    display: flex;
+
+  }
+
+  .CVbtns{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+  #outletchat {
+
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    flex: 1 1 0;
+    margin: 0.5%;
+    text-align: center;
+  }
+
+  .CV {
+    display: inline-block;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+  #skillsHeight{
+
+    overflow-y: hidden;
+    height: 50vh;
+
+  }
+
+
+  #workHeight{
+
+    overflow-y: hidden;
+    height: 400vh;
+
+  }
+
+  #outletchat {
+
+
+    width: 100%;
+    margin: 10px;
+  }
+
+  .CV {
+
+    width: 100%;
+    margin: 3px;
+  }
+
+
+
+}
+
+#outletDiv{
+  border: 1px solid rgba(0, 0, 0, 0.199);
+    flex: 2 1 0;
+    margin: 0.5%;
+    height:70vh;
+    overflow-y: auto;
+    scroll-behavior: auto!important;
+}
+
+/* width */
+#outletDiv::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+#outletDiv::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+#outletDiv::-webkit-scrollbar-thumb {
+  background: rgb(0, 168, 180);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#outletDiv::-webkit-scrollbar-thumb:hover {
+  background: #352929;
+}
+
+

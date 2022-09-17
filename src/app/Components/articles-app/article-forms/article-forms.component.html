@@ -1,0 +1,24 @@
+<br><br><br>
+
+<h3>Add New Article</h3>
+
+<form #myForm="ngForm" (ngSubmit)="postData(myForm.value); myForm.reset()" >
+
+<div class="mb-3 col-5">
+    <label for="exampleFormControlInput2" class="form-label">Author Name</label>
+    <input ngModel name="auhtorName" type="text" class="form-control" id="exampleFormControlInput2">
+  </div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Article Title</label>
+    <input ngModel name="articleTitle" type="text" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Article</label>
+    <textarea ngModel name="articleContent" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <input ngModel name="dateInput" type="date">
+  <button  class=" btn btn-success" style="float: right">Submit</button>
+ 
+
+  </form>
+  

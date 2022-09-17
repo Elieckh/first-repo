@@ -1,0 +1,10 @@
+
+<div class="card" style="width:100%; margin: 10px;" *ngFor="let array of articleArray">
+
+    <div class="card-body">
+      <h5 class="card-title"><a routerLink="/article-app/formdetails/{{array.id}}"> <b>{{array.articleTitle}} </b></a></h5>
+      <p class="card-text">By: {{array.auhtorName}}</p>
+      <p class="card-text">{{array.articleContent | slice:0-200}}</p>
+      <p class="card-text" style="color:green ;">{{array.dateInput}}</p>
+    </div>
+  </div>

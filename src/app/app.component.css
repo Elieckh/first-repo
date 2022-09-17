@@ -1,0 +1,15 @@
+
+a{
+    text-decoration: none;
+}
+
+#headerFixed{
+
+    position: fixed; left: 35%; background-color:whitesmoke ;
+
+}
+
+body{
+
+  overflow: scroll!important;
+}

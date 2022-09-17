@@ -1,0 +1,81 @@
+
+<div>
+  <header style="background-color: rgba(0, 0, 0, 0.877); display: block!important; height: auto!important;">
+
+    <h1
+      style="display:block; font-size: 30px;; color: #fff; width:70%; margin:0 auto; padding-top: 20px; text-align: center;">
+      Learn and Learn Then keep Learning Until Learning is your LifeStyle</h1>
+    <h3
+      style="display:block; font-size: 15px;; color: #999; width:31%; margin:0 auto; padding-bottom: 20px; text-align: center">
+      Angular, JavaScript, PHP, MySQL, Ionic</h3>
+
+  </header>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand">Elie El Khoury</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4"
+          style="width: 50%!important; margin:0 auto!important; text-align: center!important;">
+          <li class="nav-item"><a class="nav-link active" routerLink="home"> Home</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="cv">Curiculum Vitae</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mobile/Web Apps</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="article-app">Articles-App</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" routerLink="notes-app">Notes-App</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" routerLink="weather-app">Weather-App</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header-->
+
+</div>
+
+
+
+
+<div class="container" id="bigDiv">
+  <div id="outletDiv">
+    <router-outlet ></router-outlet>
+  </div>
+  <div id="outletchat">
+    <b>Guest Room</b>
+    <app-chatt></app-chatt>
+  </div>
+</div>
+
+
+
+<div style="width:30%; margin: 0 auto;">
+
+  <!-- Facebook -->
+  <a style="color: #3b5998;" href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
+  &nbsp;&nbsp;
+  <!-- Linkedin -->
+  <a style="color: #55acee;" href="https://www.linkedin.com/" role="button"><i class="fab fa-linkedin fa-lg"></i></a>
+  &nbsp;&nbsp;
+  <!-- Google -->
+  <a style="color: #dd4b39;" href="https://www.gmail.com/" role="button"><i class="fab fa-google fa-lg"></i></a>
+  &nbsp;&nbsp;
+  <!-- Github -->
+  <a style="color: #dd4b39;" href="https://www.github.com/" role="button"><i class="fab fa-github fa-lg"></i></a>
+
+
+
+</div>
+
+<script src="https://kit.fontawesome.com/e1ab88f8b4.js" crossorigin="anonymous"></script>

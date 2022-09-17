@@ -1,0 +1,8 @@
+#bg {
+    background-image: url(../../../assets/BG.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    width:29rem;
+    overflow-y: auto;
+
+}
