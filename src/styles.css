@@ -8,7 +8,7 @@
 
   }
 
-  .CVbtns{
+  .CVbtns {
 
     display: flex;
     align-items: center;
@@ -34,9 +34,14 @@
 
 @media only screen and (max-width: 800px) {
 
+#watsDiv{
 
+  position: fixed;
+  right:0;
+  bottom:0;
+}
 
-  #skillsHeight{
+  #skillsHeight {
 
     overflow-y: hidden;
     height: 50vh;
@@ -44,7 +49,7 @@
   }
 
 
-  #workHeight{
+  #workHeight {
 
     overflow-y: hidden;
     height: 400vh;
@@ -68,13 +73,24 @@
 
 }
 
-#outletDiv{
+ @media only screen and (max-width: 390px) {
+
+ #linksDiv{
+
+    width:100%;
+    margin:0
+
+ }
+
+ }
+
+#outletDiv {
   border: 1px solid rgba(0, 0, 0, 0.199);
-    flex: 2 1 0;
-    margin: 0.5%;
-    height:70vh;
-    overflow-y: auto;
-    scroll-behavior: auto!important;
+  flex: 2 1 0;
+  margin: 0.5%;
+  height: 70vh;
+  overflow-y: auto;
+  scroll-behavior: auto !important;
 }
 
 /* width */
@@ -98,5 +114,3 @@
 #outletDiv::-webkit-scrollbar-thumb:hover {
   background: #352929;
 }
-
-

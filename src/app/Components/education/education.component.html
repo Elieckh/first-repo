@@ -1,29 +1,18 @@
-<br>
-<div class="container"
-  style="margin-bottom:1% ; width:30% ; display: flex; align-items: center; justify-content: center;">
-  <ngb-carousel *ngIf="images">
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <div class="card">
-          <img src="../../../assets/Aul-Kaslik.jfif" class="card-img-top" alt="..." style=" width: 300px; height:200px;">
-          <div class="card-body">
-            <h5 class="card-title" style="margin-left:30% ;">AUL Kaslik</h5>
-            <p class="card-text" style="margin-left:23% ;margin-bottom:3% ;">Computer Science.</p>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <div class="card" style="width: 20rem;">
-          <img src="../../../assets/ETSTC.jpg" class="card-img-top" alt="..." style="width:300px ; height: 180px;">
-          <div class="card-body">
-            <h5 class="card-title"  style="margin-left:41% ;">ETSTC</h5>
-            <p class="card-text" style="margin-left:23% ;margin-bottom:3% ;">Information Technology</p>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-
-  </ngb-carousel>
+<div style="color:rgb(52, 55, 68) ; text-align: center;"> Responsive <b>Slider</b> to take a look to my Education history</div><br>
+<div class="container" style="width:70%; height:50vh;">
+<ion-content>
+<ion-slides pager="true" [options]="slideOpts" >
+  <ion-slide>
+    <img src="../../../assets/AUL-Logo.PNG" style="height:220px; width:auto">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/ETSTC.JPG">
+  </ion-slide>
+</ion-slides>
+</ion-content>
 </div>
+
+
+
+
+
